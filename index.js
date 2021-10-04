@@ -14,5 +14,5 @@ app.get('/', (req, res) => {
 app.use(express.static('public'));
 
 app.listen(port, () => {
-console.log(`Mi aplicacion la levanto por:${port}`)
+console.log(`Mi aplicacion la levanto por: ${port}`)
 })

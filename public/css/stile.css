@@ -1,6 +1,16 @@
 body {
-    background-color: #EAC926;
-    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    font-family: 'Roboto', 
+    sans-serif;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+img {
+    width: 90%;
 }
 
 ul {
@@ -26,6 +36,25 @@ li {
     font-size: 24px;
 }
 
+.producto {
+    background-color: white;
+    margin: 10px 10px;
+}
+
+.propiedadesProducto {
+    border-top: solid 1px #ebebeb;
+    padding: 0 15px;
+}
+.logoProducto {
+    color:#39b54a;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background-color: #fff;
+}
+
 .precio {
     font-size: 18px;
 }
@@ -36,4 +65,17 @@ li {
 
 .descripcion {
     font-size: 16px;
+}
+
+
+@media (max-width: 360px) {
+    .descripcion {
+        display: none;
+    }
+}
+
+@media (min-width: 770px) {
+    .producto {
+    box-shadow: 0px 0px 10px rgb(100 100 100);
+    }
 }
