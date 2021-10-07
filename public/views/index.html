@@ -2,36 +2,46 @@
 <html>
     <head>
         <title>Mercado Liebre</title>
-        <img src="img/logo-mercado-liebre.svg" alt="" width="100%">
+        
         <link href="css/stile.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/5dec0788b2.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <input type="text">
-            <p>Aqui Compras en coutas y sin TC <i class="fas fa-hand-holding-usd"></i>  </p>
-        </header>
-        <nav>
-            <ul>
-                <li> <a href="#">Ofertas</a></li>
-                <li> <a href="#">Tiendas Oficiales</a></li>
-                <li> <a href="#">Vender</a></li>
-                <li> <a href="#">Ayuda</a></li>
-            </ul>
-            <ul>
-                <li> <a href="#">Crea tu cuenta <i class="fas fa-shopping-basket"></i></a></li>
-                <li> <a href="#">Ingresa <i class="fas fa-sign-in-alt"></i></a></li>
-                <li> <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
-            </ul>
-        </nav>
-        <main>
-            <div class="burger">
-                <div class="burger-menu">
-                    <i class="fas fa-bars"></i>
-                </div>
+        <header class="mainHeader">
+            <img src="img/logo-mercado-liebre.svg" class="logo" alt="" width="100%">
+            <div class= "logoHeader">
+                <form action="/#" method="POST" id="search">
+                    <label for="productSearch">Busca tu Producto:</label>
+                    <br>
+                    <input type="text" id="productSearch" name="productSearch" required minlength="1" maxlength="32">
+                
+                </form>
+                <button type="submit" form="search" value="submit">Enviar</button>
+                <p>Aqui Compras en coutas y sin TC <i class="fas fa-hand-holding-usd"></i>  </p>
             </div>
+
+                <a href="#" class="burger">
+                    <i class="fas fa-bars"></i>
+                </a>
+
+            <nav class="linksHeader">
+                <ul class="firstNav">
+                    <li> <a href="#">Ofertas</a></li>
+                    <li> <a href="#">Tiendas Oficiales</a></li>
+                    <li> <a href="#">Vender</a></li>
+                    <li> <a href="#">Ayuda</a></li>
+                </ul>
+                <ul class="secundNav">
+                    <li> <a href="/register">Crea tu cuenta <i class="fas fa-shopping-basket"></i></a></li>
+                    <li> <a href="/login">Ingresa <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li> <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
             <section class="ultimaVisita">
                 <h3 class="titulo">Basado en tu ultima visita</h3>
                 <div class="producto">

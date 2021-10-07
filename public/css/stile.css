@@ -1,7 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #ebebeb;
     font-family: 'Roboto', 
     sans-serif;
+}
+
+.mainHeader {
+    background-color: #EAC926;
+    padding: 20px;
+    list-style: none;
+}
+
+.burger{
+    background-color: #03264c;
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.logo {
+    width: 200px;
+}
+
+.logoHeader {
+    font-weight: 400;
+    text-align: center;
 }
 
 main {
@@ -17,9 +48,9 @@ ul {
     padding: 0;
 }
 
-li {
+/* li {
     list-style: none;
-}
+} */
 
 .burger-menu{
     background-color: blue;
@@ -39,12 +70,28 @@ li {
 .producto {
     background-color: white;
     margin: 10px 10px;
+    box-shadow: 0px 0px 0px #ffffff;
+    transition: box-shadow 1s;
+}
+
+.producto:hover {
+    box-shadow: 0px 0px 10px rgb(100 100 100);
 }
 
 .propiedadesProducto {
     border-top: solid 1px #ebebeb;
     padding: 0 15px;
+
 }
+
+.propiedadesProducto h5{
+    display: none;
+}
+
+.propiedadesProducto:hover h5{
+    display: initial;
+}
+
 .logoProducto {
     color:#39b54a;
     border: 1px solid #39b54a;
@@ -53,6 +100,12 @@ li {
     height: 30px;
     padding: 5px;
     background-color: #fff;
+    transition-duration: 1s;
+    transition: transform none;
+}
+
+.logoProducto:hover {
+    transform: rotate(-90deg); 
 }
 
 .precio {
@@ -76,6 +129,6 @@ li {
 
 @media (min-width: 770px) {
     .producto {
-    box-shadow: 0px 0px 10px rgb(100 100 100);
+    /* box-shadow: 0px 0px 10px rgb(100 100 100); */
     }
 }
