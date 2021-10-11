@@ -1,7 +1,8 @@
 {
-  "name": "clase11",
+  "name": "html_css",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -9,17 +10,5 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.12"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/angeluisq96/Angel-Luis.git"
-  },
-  "bugs": {
-    "url": "https://github.com/angeluisq96/Angel-Luis/issues"
-  },
-  "homepage": "https://github.com/angeluisq96/Angel-Luis#readme",
-  "description": ""
+  }
 }
